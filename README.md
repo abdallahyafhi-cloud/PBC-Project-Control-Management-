@@ -1,22 +1,28 @@
-# PBC Project Control – Final Handover Package
+# PBC Project Control – starter build
 
-## Included source material
-- `public/data/PBC-Dashboard-Source.xlsx`: the supplied 15-sheet PBC workbook.
-- `public/data/PBC-Bridge-Locations.kml`: original Google Earth location file.
-- `public/data/pbc-assets.geojson`: converted point features for 114 placemarks found in the KML. Coordinates are `[longitude, latitude]`.
+A Vite + React + TypeScript front-end starter for the PBC Project Control rebuild.
 
 ## Run locally
-1. Install Node.js LTS.
-2. Open a terminal in `pbc-control`.
-3. Run `npm install`.
-4. Run `npm run dev`.
-5. Open the local URL shown by Vite.
+
+```bash
+npm install
+npm run dev
+```
 
 ## Deploy to Vercel
-Import the project folder into a Vercel project (or connect a new Git repository). Framework preset: Vite. Build command: `npm run build`. Output directory: `dist`.
 
-## Important implementation status
-This is a frontend starter plus the verified source workbook and geospatial asset data. It is NOT yet a production-ready multi-user system. Production use requires a persistent database, authentication/role enforcement, secure file storage, server-side import validation, durable audit history, and tested PDF/Excel report generation. Those services need to be configured in an account controlled by the project owner. The existing Vercel site cannot be overwritten without access to its Vercel project.
+1. Upload this folder to a Git repository you own, or import it using Vercel's supported project upload workflow.
+2. Framework preset: Vite.
+3. Build command: `npm run build`.
+4. Output directory: `dist`.
 
-## Location data
-The KML contains 114 point placemarks. The GeoJSON preserves each placemark's name, description (where present), and coordinates. Some placemarks may not correspond one-to-one with workbook asset names; confirm the asset-name mapping before linking live work orders to locations.
+## Current implementation
+- Technical-focused navy/teal dashboard shell.
+- Responsive sidebar and project overview.
+- Excel workbook upload using SheetJS; worksheet rows are read into browser memory.
+- Work Order list and manual Work Order creation with Asset selection.
+- Separate report selection and Excel export scaffold.
+- Placeholder areas for the approved engineering, finance, quality, risk and reporting modules.
+
+## Important production work still required
+This is the initial front-end foundation, not a production-ready multi-user system. Before operational use, implement a secure backend/database, authentication and role-based authorization, durable file storage, validated import preview and field mapping, duplicate detection, audit trail, server-side PDF generation, and verified KPI formulas. The uploaded workbook contains legacy formulas including `#REF!`; formulas must be reviewed and mapped before publishing calculated KPIs. Approval SLA defaults to 28 calendar days in the product specification and must be configurable per payment certificate; contract-specific day-count rules should be confirmed before use.
