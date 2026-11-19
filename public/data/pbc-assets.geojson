@@ -1,0 +1,1602 @@
+{
+  "type": "FeatureCollection",
+  "name": "PBC Bridge and Pedestrian Subway Assets",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "DM FB",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.1351773230168,
+          25.0762494786567
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "CS FB",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.17320917518773,
+          25.10800499947081
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "SP FB",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.17135111783178,
+          25.05334550261696
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "JBI FB1",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.11034494827723,
+          25.00246114872469
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "JBI FB3",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.13163531650972,
+          24.98274073232904
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "JBI FB2",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.11252315311936,
+          24.98870791919254
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "JBI FB4",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.1289811025608,
+          24.99860513600072
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "UMFB1",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.22662779077255,
+          25.10689953942791
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "UMFB2",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.21552828595342,
+          25.1141555830765
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "UMFB3",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.20801749198023,
+          25.11928810522759
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "MRBFB",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.23547916454189,
+          25.12838290520675
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "AS FB1",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.24260428111631,
+          25.14222633709204
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "AS FB2",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.25106207907212,
+          25.15135627236554
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "LBH FB2",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.2515082897452,
+          25.14473986101237
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "LBH FB",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.24231535365024,
+          25.15124207099704
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "RAK2",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.35597547912259,
+          25.18525571901484
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "RAK1",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.37652760030485,
+          25.18305953258993
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "RS FB",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.38778627446196,
+          25.21357331912437
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "SHMB FB1",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.39522144113211,
+          25.17398088560391
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "CRT FB1",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.48879398852389,
+          24.96962993823661
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "CRT FB2",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.48377460995873,
+          24.97246045825589
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "AA SB10",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.55317600870424,
+          24.87282184841888
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "AA SB12",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.57998037529595,
+          24.81973114038821
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "KBW FB",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.28783804399851,
+          25.25936178555909
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "KBW FB2",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.2923208294245,
+          25.25935745512199
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "MAN FB",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.2958117706497,
+          25.25705759104248
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "MAN FB2",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.28708851236744,
+          25.24904437608132
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "ZBK FB",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.30048763404542,
+          25.23744674007492
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "ZCD FB",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.30832818445821,
+          25.24665428562436
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "UHR FB",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.30623585136729,
+          25.23848095529562
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "ZUR FB",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.30566855173775,
+          25.2396807333866
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "UHR FB7",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.30954823826891,
+          25.2421665218708
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "OUD FB3",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.31702082533278,
+          25.23885896391235
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "IH FB",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.33695709270044,
+          25.25181674704403
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "JOC FB",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.32872493607286,
+          25.25266006575152
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "1 NH FB",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.37796494022107,
+          25.23067859781863
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "2 NH FB",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.37699872739164,
+          25.22394223572049
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "DMS FB1",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.37951602184656,
+          25.27072151940962
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "DMS FB2",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.38156910910906,
+          25.27393426081842
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "DMS FB3",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.3880931272049,
+          25.282069258155
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "BGS-FB1",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.39917682574095,
+          25.26893498883297
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "BGS-FB2",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.37049655747995,
+          25.28560527915509
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "BR FB",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.39254490973511,
+          25.2658348241551
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "ANS FB",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.39763390455983,
+          25.25606053596198
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "SHMB FB2",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.41969770191349,
+          25.27584709123073
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "AMS FB",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.41144762882942,
+          25.28206717727106
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "AMS FB2",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.38068001220832,
+          25.29853255977585
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "ABAS FB1",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.32850537899109,
+          25.26181763531559
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "ABAS FB2",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.33019449980196,
+          25.2729668185252
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "ABAS FB3",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.33045228618497,
+          25.26619845121179
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "UBAK FB",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.31565893022172,
+          25.26618307190105
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "MAK FB1",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.32112351383701,
+          25.26074707068437
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "MAK FB2",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.32818781274188,
+          25.25838752264897
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "APR FB1",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.34110855629141,
+          25.25363027196992
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "APR FB2",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.33419933063915,
+          25.25752818773637
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "CB FB",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.34497592647207,
+          25.24369632433112
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "AP SW",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.35018226606752,
+          25.24682443702263
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "BSW1",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.32407367082717,
+          25.25490109216564
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "WUH FB",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.35270770289664,
+          25.28350919335443
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "RR FB1",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.34003252626553,
+          25.28527334529031
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "AHR FB",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.34020769886132,
+          25.28280512809213
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "RR FB3",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.33584251763106,
+          25.28277296375673
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "AHC FB",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.34600704127806,
+          25.27810709759389
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "AKR FB6",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.30012351552864,
+          25.27440302845617
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "BAN FB1",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.30515680358472,
+          25.26739006254292
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "MA SW",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.30379431197743,
+          25.26744923679705
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "SA SW",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.2970625971179,
+          25.26728484648724
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "RR FB2",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.32290325284905,
+          25.27811449579778
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "BSW2",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.3240308185708,
+          25.2550154806671
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "BAN FB2",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.31926800013914,
+          25.25901528675913
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "INF FB",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.293269160363,
+          25.27433337697028
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "IBR FB",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.3162416825323,
+          25.28282198481311
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "AKR FB2",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.30295054506092,
+          25.27619736692065
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "DWC FB3",
+        "description": "RTA Visit 13-09-2024"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.24174471663072,
+          25.19434631449399
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "DWC FB2",
+        "description": "Condition survey verification 12-09-24"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.24432846125066,
+          25.19059785418212
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "DWC FB1",
+        "description": "Condition Survey Verification 11-09-24"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.25083750661574,
+          25.18674622541774
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "SAFA FB1",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.24187257955397,
+          25.18490839781881
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "SAFA FB2",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.23909500709796,
+          25.18657238845631
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "5 DWC FB",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.25483659868888,
+          25.18651895876405
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "5 DWC FB",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.25371407830899,
+          25.18536754726009
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "2 DWC FB",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.25414768784246,
+          25.18464309725844
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "2 DWC FB",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.25578238466747,
+          25.18639025065981
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "7 DWC FB",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.23508343944366,
+          25.19511687813441
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "7 DWC FB",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.23599330109965,
+          25.19654917067387
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "TCS FB",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.29005399131958,
+          25.2214839384827
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "TCSW3",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.28212023646686,
+          25.22012564454299
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "TCSW3",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.28077006035356,
+          25.22068795445531
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "MINA FB2",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.27554855541072,
+          25.24238671206844
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "IR FB",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.26848621554501,
+          25.23159002480558
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "1. PARCO ZONE-4",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.14682299218544,
+          24.99927764056389
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "2. Al Qouz Zone-4",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.2323579982478,
+          25.14528048645454
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "5. MARINA & JBR-3",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.1213875403102,
+          25.07809012637272
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "7. Nahda-3",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.37654393536877,
+          25.29831756679874
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "9. Al qusais-4",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.36835267841533,
+          25.28560091788662
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "10. Al qusais1-3",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.38954775636502,
+          25.26460803869271
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "11. Mankhool-4",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.28693279905646,
+          25.26100494136915
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "12. MINA Street-3",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.26842423346608,
+          25.22793282469876
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "15. Hor al Anz-5",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.3334872712202,
+          25.28344566171818
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "17. MAK-4",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.3146737648444,
+          25.268190407513
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "18. Jewal of creek-3",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.3182003585058,
+          25.26014393674513
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "19. Airport-4",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.34134632349918,
+          25.25537071413707
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Untitled Polygon",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.27929182972922,
+          25.21906640203562
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Untitled Polygon",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.30699066632076,
+          25.24804965507128
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Untitled Polygon",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.2046794489308,
+          25.11936337440343
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Untitled Polygon",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.3498975928313,
+          25.19186436400112
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Untitled Polygon",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.37622513040595,
+          25.23389388677149
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Untitled Polygon",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.306829524398,
+          25.26820406072272
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "6. AL AIN ROAD-2",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.47574480711942,
+          24.97542348360118
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "4. DUBAI WATER CANAL-7",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.23521045045493,
+          25.19839047808748
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Untitled Polygon",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.31496392564571,
+          25.28395269915375
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "2E1-SOUTH",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.31995003722452,
+          25.28794377718565
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "2E1-NORTH",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.32184796731492,
+          25.28947563523312
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "MINA-FB3",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.28405556289711,
+          25.25373742434691
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "SR-FB",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.28997506137302,
+          25.24303866653055
+        ]
+      }
+    }
+  ]
+}
