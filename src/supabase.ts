@@ -169,3 +169,14 @@ export async function loadAttachmentsForAssets(assetIds:string[]):Promise<PbcAtt
   const rows=await dbRequest<PbcAttachment[]>('record_attachments',`select=*&asset_id=in.(${ids.join(',')})&order=uploaded_at.asc`);
   return Promise.all(rows.map(async item=>({...item,signed_url:await getAttachmentSignedUrl(item.storage_path)})));
 }
+export async function resetPassword(email: string) {
+  const redirectTo =
+    'https://pbc-project-control-management.vercel.app/';
+
+  await authRequest(
+    recover?redirect_to=${encodeURIComponent(redirectTo)},
+    { email }
+  );
+
+  return true;
+}
