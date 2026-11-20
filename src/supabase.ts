@@ -47,5 +47,15 @@ export async function replaceImportedRows(rowsBySheet: Record<string, Record<str
   }
 }
 export async function loadImportedRows() {
-  return dbRequest<any[]>('project_records', 'select=id,module,source_sheet,source_row,data,discipline,status,is_imported&is_imported=eq.true&order=source_row.asc');
+  return dbRequest<any[]>('project_records', 'select=id,module,source_sheet,source_row,data,discipline,status,is_imported,asset_id,record_key,record_date,created_at,updated_at&is_imported=eq.true&order=source_row.asc');
+}
+export async function loadAllProjectRecords() {
+  return dbRequest<any[]>('project_records', 'select=*&order=created_at.desc');
+}
+export async function saveProjectRecord(record: Record<string, any>, id?: string) {
+  if (id) return dbRequest<any[]>('project_records', `id=eq.${encodeURIComponent(id)}`, { method: 'PATCH', body: record, prefer: 'return=representation' });
+  return dbRequest<any[]>('project_records', '', { method: 'POST', body: record, prefer: 'return=representation' });
+}
+export async function deleteProjectRecord(id: string) {
+  return dbRequest('project_records', `id=eq.${encodeURIComponent(id)}`, { method: 'DELETE', prefer: 'return=minimal' });
 }
