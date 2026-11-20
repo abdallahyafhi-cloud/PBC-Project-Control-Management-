@@ -2,7 +2,7 @@
 
 Vite + React + TypeScript project dashboard for M1009/PBC routine maintenance of footbridges and pedestrian subways in Dubai.
 
-## Run
+## Run locally
 
 ```bash
 npm install
@@ -21,13 +21,27 @@ npm run build
 - `public/data/PBC-Bridge-Locations.kml` is the supplied KML.
 - `public/data/pbc-assets.geojson` is the GIS feature collection packaged with the supplied project.
 
-The app loads the packaged workbook at startup and supports Excel re-import. The source workbook is never overwritten by browser edits.
+The workbook and GIS files remain packaged as the read-only baseline. On the first authenticated session, workbook rows are copied to the shared database. Subsequent signed-in sessions load the centrally stored imported rows. Importing a replacement workbook replaces only the imported records belonging to each matching source sheet; user-created records (where `is_imported=false`) are not deleted.
 
-## Current implementation notes
+## Shared database (Supabase)
 
-- Report builder supports report selection, custom start/end dates, section filtering, asset filtering, Excel export, and print-to-PDF layout.
-- Work orders are read from the Civil and MEP task sheets using their row-21 headers. NCR, risk, issue and change request tables use the corresponding source header rows.
-- GIS features are listed from the packaged GeoJSON. Asset-to-record matching is based on exact displayed asset/field names only; unmatched records are not silently assigned.
-- Role selection is a UI preview only. Secure authentication, server-side role enforcement, shared multi-user persistence, audit storage, and approval workflows require a backend and must not be treated as production security features.
-- Manual records are held in browser memory for the active session. Daily updates, payment certificate date workflow, photo storage, full asset profiles, and automatic image-linked PDF sections require further backend/data-model implementation.
-- Print-to-PDF uses the browser print dialog. Choose Save as PDF and enable background graphics for the designed cover/table styling.
+The project uses Supabase Auth and the PostgREST API directly (no service-role key is used in the browser).
+
+Set these Vercel environment variables for Production (and Preview/Development if required):
+
+- `VITE_SUPABASE_URL` — `https://<project-ref>.supabase.co`
+- `VITE_SUPABASE_ANON_KEY` — the project's publishable/anon key (`sb_publishable_...` is supported)
+
+The `supabase/schema.sql` file creates the shared workspace tables, audit triggers, RLS policies and private attachments bucket. Run it once in the Supabase SQL Editor. It creates tables only when absent; the trigger refresh statements replace the named triggers. Review and tighten the sample policies before inviting external users.
+
+Users create an account or sign in through the application. If email confirmation is enabled in Supabase Auth, users must verify their email before signing in. Signed-in users can import the official workbook; the first authenticated session migrates the packaged source workbook automatically when the shared project register is empty.
+
+Never put a Supabase `service_role` key in frontend code or in any `VITE_` variable. The publishable/anon key is designed for browser use; database access is controlled by RLS.
+
+## Current integration scope and limitations
+
+- Shared authentication and central persistence for imported Excel register rows are implemented.
+- Source sheet names and original row fields are preserved in `project_records.data` JSONB.
+- Shared data is loaded for signed-in users; the GIS map continues to use the packaged GeoJSON baseline.
+- This is the initial shared-data connection. Full per-role authorization, user-created record forms, file upload/download workflows, payment approval workflow, and asset geometry editing are not yet implemented. The role selector remains a UI preview and must not be treated as a security boundary.
+- Excel import replaces imported records sheet-by-sheet. Avoid importing a partial workbook if it omits source sheets you intend to retain.
