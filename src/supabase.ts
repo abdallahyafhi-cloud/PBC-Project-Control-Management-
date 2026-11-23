@@ -174,7 +174,7 @@ export async function resetPassword(email: string) {
     'https://pbc-project-control-management.vercel.app/';
 
   await authRequest(
-    recover?redirect_to=${encodeURIComponent(redirectTo)},
+    `recover?redirect_to=${encodeURIComponent(redirectTo)}`,
     { email }
   );
 
