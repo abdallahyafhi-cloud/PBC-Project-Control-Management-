@@ -170,35 +170,29 @@ export async function loadAttachmentsForAssets(assetIds:string[]):Promise<PbcAtt
   return Promise.all(rows.map(async item=>({...item,signed_url:await getAttachmentSignedUrl(item.storage_path)})));
 }
 export async function resetPassword(email: string) {
-  if (!supabaseConfigured) {
-    throw new Error('Supabase environment variables are missing.');
-  }
-
-  const redirectTo = 'https://pbc-project-control-management.vercel.app/';
-
+  if (!supabaseConfigured) throw new Error('Supabase environment variables are missing.');
+  const redirectTo = window.location.origin + '/';
   const response = await fetch(
     `${SUPABASE_URL}/auth/v1/recover?redirect_to=${encodeURIComponent(redirectTo)}`,
-  {
     {
       method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        apikey: SUPABASE_KEY!
-      },
+      headers: { 'Content-Type': 'application/json', apikey: SUPABASE_KEY! },
       body: JSON.stringify({ email })
     }
   );
-
   const data = await response.json().catch(() => ({}));
+  if (!response.ok) throw new Error(data.msg || data.message || data.error_description || 'Could not send password recovery email.');
+  return true;
+}
 
-  if (!response.ok) {
-    throw new Error(
-      data.msg ||
-      data.message ||
-      data.error_description ||
-      'Could not send password recovery email.'
-    );
-  }
-
+export async function updatePassword(accessToken: string, password: string) {
+  if (!supabaseConfigured) throw new Error('Supabase environment variables are missing.');
+  const response = await fetch(`${SUPABASE_URL}/auth/v1/user`, {
+    method: 'PUT',
+    headers: { 'Content-Type': 'application/json', apikey: SUPABASE_KEY!, Authorization: `Bearer ${accessToken}` },
+    body: JSON.stringify({ password })
+  });
+  const data = await response.json().catch(() => ({}));
+  if (!response.ok) throw new Error(data.msg || data.message || data.error_description || 'Could not update password. The recovery link may have expired.');
   return true;
 }
