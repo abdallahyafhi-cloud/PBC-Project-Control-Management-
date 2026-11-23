@@ -1,0 +1,28 @@
+PBC PROJECT CONTROL — EXECUTIVE COMMAND CENTRE UPDATE
+
+This update replaces only the Overview page presentation with the approved dark navy / teal Executive Command Centre design.
+
+Included:
+- Executive KPI cards calculated from the existing workbook and current shared records.
+- Work order status distribution and Civil / MEP split.
+- Contract value and paid-to-date summary from Contract Financial Details.
+- Payment workflow indicators from existing shared payment records.
+- Asset work order ranking.
+- Risk severity distribution and NCR category analytics.
+- Monthly revenue and stakeholder satisfaction trends.
+- Deadline watchlist and change request summary.
+- GIS asset overview using the existing GeoJSON and asset register data.
+- Navigation from dashboard panels to existing modules.
+
+Data and safety:
+- No Supabase schema, table, policy, user role, or record was changed by this UI update.
+- No SQL migration is required for the dashboard redesign.
+- The dashboard does not write or delete records while rendering.
+- Values are derived from the existing Excel workbook / already-loaded shared records. Missing source fields remain blank or zero rather than being fabricated.
+- The map uses the existing public GIS assets and OpenStreetMap tiles.
+
+Deployment:
+1. Upload the contents of this ZIP to the existing GitHub repository root, preserving the folder structure.
+2. Commit to main and wait for Vercel Production deployment to finish.
+3. Verify the Overview page, then test navigation to Work Orders, Sites & Assets, Contract & Payments, NCR & Quality, Risks & Issues, Change Requests, Deadlines, Reports and User Management.
+4. Check Vercel Build Logs. This environment could not complete npm install, so a local production build is not certified here.
