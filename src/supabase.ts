@@ -177,7 +177,8 @@ export async function resetPassword(email: string) {
   const redirectTo = 'https://pbc-project-control-management.vercel.app/';
 
   const response = await fetch(
-    ${SUPABASE_URL}/auth/v1/recover?redirect_to=${encodeURIComponent(redirectTo)},
+    `${SUPABASE_URL}/auth/v1/recover?redirect_to=${encodeURIComponent(redirectTo)}`,
+  {
     {
       method: 'POST',
       headers: {
