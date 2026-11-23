@@ -100,22 +100,19 @@ export async function getAttachmentSignedUrl(path: string): Promise<string> {
   return `${SUPABASE_URL}/storage/v1${data.signedURL.startsWith('/') ? data.signedURL : `/${data.signedURL}`}`;
 }
 
+export async function loadCurrentRole(): Promise<string | null> {
+  const session=getSession(); if(!session) return null;
+  // Resolve permissions inside PostgreSQL using auth.uid(), never from a client-supplied user id.
+  const result=await dbRequest<any>('rpc/pbc_current_role','',{method:'POST',body:{}});
+  if(typeof result==='string') return result;
+  if(Array.isArray(result) && typeof result[0]==='string') return result[0];
+  if(result && typeof result.role==='string') return result.role;
+  return null;
+}
 export async function loadUserProfile() {
   const session=getSession(); if(!session) return null;
-  // Read the signed-in user's role through the SECURITY DEFINER RPC first.
-  // This avoids a false Viewer fallback when direct profile SELECT is blocked by RLS.
-  let serverRole: string | null = null;
-  try {
-    const roleResult = await dbRequest<any>('rpc/pbc_current_role','',{method:'POST',body:{}});
-    serverRole = typeof roleResult === 'string' ? roleResult : (roleResult?.role || roleResult?.pbc_current_role || null);
-  } catch {
-    // Older deployments may not yet have the RPC; fall back to the profile row.
-  }
   const rows=await dbRequest<any[]>('user_profiles',`select=user_id,display_name,role&user_id=eq.${encodeURIComponent(session.user.id)}&limit=1`);
-  const profile=rows[0]||null;
-  if (profile && serverRole) return {...profile, role: serverRole};
-  if (!profile && serverRole) return {user_id:session.user.id,display_name:session.user.email||'PBC User',role:serverRole};
-  return profile;
+  return rows[0]||null;
 }
 export async function loadAuditLogs(limit=250) {
   return dbRequest<any[]>('audit_logs',`select=*&order=changed_at.desc&limit=${limit}`);

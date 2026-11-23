@@ -35,6 +35,8 @@ returns text language sql stable security definer set search_path=public as $$
   select coalesce((select role from public.user_profiles where user_id=auth.uid()),'Consultant / Viewer');
 $$;
 
+grant execute on function public.pbc_current_role() to authenticated;
+
 create or replace function public.pbc_can_edit_module(p_module text)
 returns boolean language sql stable security definer set search_path=public as $$
  select case public.pbc_current_role()

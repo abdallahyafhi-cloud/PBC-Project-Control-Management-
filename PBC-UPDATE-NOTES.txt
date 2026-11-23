@@ -1,0 +1,20 @@
+PBC EXECUTIVE COMMAND CENTRE UPDATE
+
+Files changed:
+- src/App.tsx: new Executive Command Centre hero and additional source-driven analytics:
+  * Civil/MEP recorded completion and closed work-order counts
+  * Contract value, paid amounts, remaining approved budget and paid-to-contract ratio
+  * Risk severity/status exposure
+  * NCR status profile
+  * Existing work-order, discipline, asset, risk, NCR, revenue, satisfaction and deadline charts retained
+- src/style.css: full responsive executive visual refresh
+- src/supabase.ts: secure server-side current-role resolver via rpc/pbc_current_role
+- supabase/production-upgrade.sql: explicit EXECUTE grant for authenticated role resolver
+- supabase/administrator-diagnostic.sql: read-only auth/profile UUID diagnostic and commented email-specific role bootstrap
+
+Important:
+1. The role resolver uses auth.uid() inside PostgreSQL. It does not grant Administrator on the client.
+2. If the Auth UUID does not match the user_profiles.user_id row, run the read-only diagnostic SQL first. Only then use the commented bootstrap statement with the exact login email if required.
+3. No user data or Supabase records were deleted or modified by preparing this package.
+4. TypeScript/TSX syntax transpilation passed for App.tsx and supabase.ts.
+5. Full npm build could not be run because npm install timed out in this environment. Run npm install and npm run build before deploying.
