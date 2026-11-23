@@ -170,13 +170,34 @@ export async function loadAttachmentsForAssets(assetIds:string[]):Promise<PbcAtt
   return Promise.all(rows.map(async item=>({...item,signed_url:await getAttachmentSignedUrl(item.storage_path)})));
 }
 export async function resetPassword(email: string) {
-  const redirectTo =
-    'https://pbc-project-control-management.vercel.app/';
+  if (!supabaseConfigured) {
+    throw new Error('Supabase environment variables are missing.');
+  }
 
-  await authRequest(
-    `recover?redirect_to=${encodeURIComponent(redirectTo)}`,
-    { email }
+  const redirectTo = 'https://pbc-project-control-management.vercel.app/';
+
+  const response = await fetch(
+    ${SUPABASE_URL}/auth/v1/recover?redirect_to=${encodeURIComponent(redirectTo)},
+    {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        apikey: SUPABASE_KEY!
+      },
+      body: JSON.stringify({ email })
+    }
   );
+
+  const data = await response.json().catch(() => ({}));
+
+  if (!response.ok) {
+    throw new Error(
+      data.msg ||
+      data.message ||
+      data.error_description ||
+      'Could not send password recovery email.'
+    );
+  }
 
   return true;
 }
