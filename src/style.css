@@ -139,3 +139,107 @@ body{background:var(--pbc-paper)}
 @media(max-width:1350px){.executive-kpis{grid-template-columns:repeat(3,minmax(0,1fr))}.executive-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:760px){.executive-filterbar{flex-wrap:wrap;gap:8px}.executive-filterbar>span{margin-left:0;width:100%}.executive-kpis{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.executive-kpi{min-height:118px;padding:13px 9px 10px 47px}.ek-icon{left:9px;top:13px;width:29px;height:29px}.executive-kpi b{font-size:16px}.executive-grid{grid-template-columns:1fr}.exec-panel.span-2{grid-column:span 1}.exec-panel{padding:14px}.exec-panel-head{gap:6px}.exec-panel-head h3{font-size:12px}.exec-panel-head p{font-size:8px}.exec-chart{height:205px}.exec-map{height:230px}.exec-table-wrap{margin-left:-14px;margin-right:-14px}.exec-foot{gap:7px}}
 .executive-shell .main{background:#091f2c}.executive-shell .topbar{background:#0e2a3a;border-color:#244657}.executive-shell .crumb{color:#89a8b6}.executive-shell .crumb strong{color:#eff8f8}.executive-shell .top-actions .btn.secondary{background:#15384a;border-color:#315568;color:#d2e8e9}.executive-shell .status-pill{background:#153b43;color:#a9d7cb}.executive-shell .profile{background:#1c4b5b;color:#d5f3ec}.executive-shell .content>.page-head{display:none}.executive-shell .content{padding-top:20px}.executive-shell .notice{background:#16394a;border-color:#315568;color:#e7f3f3}.executive-shell .notice span{color:#a9c1ca}.executive-shell .notice b{color:#e7f3f3}.executive-shell .notice button{color:#73d7c7}
+
+
+/* Visual refinement pass — restore the rich surfaces and inset visual stages from the approved mockup */
+.executive-shell .pbc-command-hero{
+  background:
+    radial-gradient(ellipse at 78% 16%,rgba(39,188,187,.25),transparent 28%),
+    radial-gradient(ellipse at 94% 95%,rgba(17,117,143,.24),transparent 36%),
+    linear-gradient(110deg,#071c2b 0%,#0b3044 48%,#104c5b 100%);
+}
+.executive-shell .pbc-command-hero:before{
+  width:520px;height:260px;right:3%;top:-65px;border-radius:48%;
+  border-color:#56d8d322;transform:rotate(-12deg);
+  box-shadow:0 0 0 22px #56d8d30b,0 0 0 48px #56d8d308;
+}
+.executive-shell .pbc-command-hero:after{
+  width:430px;height:180px;right:12%;top:8px;border-radius:45%;
+  border-color:#8be7df20;transform:rotate(9deg);
+}
+.filterbar-visual{
+  position:relative;overflow:hidden;min-height:62px;padding:12px 17px 12px 20px;
+  border:1px solid #286477;border-radius:13px;
+  background:linear-gradient(100deg,#0c293b 0%,#123d50 52%,#0b2b40 100%);
+  box-shadow:inset 0 1px 0 #ffffff12,0 8px 22px #03172555;
+}
+.filterbar-visual:after{
+  content:"";position:absolute;right:-30px;top:-70px;width:250px;height:190px;
+  border:1px solid #4dd8d31c;border-radius:50%;
+  box-shadow:0 0 0 18px #4dd8d309,0 0 0 38px #4dd8d306;pointer-events:none;
+}
+.filterbar-visual>div,.filterbar-visual>span,.filterbar-visual>button{position:relative;z-index:1}
+.filterbar-visual>div{font-size:9px;letter-spacing:1px}
+.filterbar-visual>span{padding:8px 12px;border:1px solid #ffffff16;border-radius:8px;background:#ffffff0a;color:#c1d8e1}
+.filterbar-visual button{background:linear-gradient(135deg,#087e83,#10a99b);border-color:#36d7ca;color:#fff;padding:9px 13px;box-shadow:0 5px 16px #04a99b33}
+.exec-panel{
+  position:relative;
+  background:linear-gradient(145deg,rgba(18,54,73,.98),rgba(8,31,48,.98) 72%,rgba(11,43,59,.98));
+  border-color:#286075;
+  box-shadow:inset 0 1px 0 #ffffff0b,0 12px 28px #020e1c55;
+}
+.exec-panel:before{
+  content:"";position:absolute;inset:0;pointer-events:none;border-radius:inherit;
+  background:radial-gradient(ellipse at 92% 0%,#23c6c51b,transparent 36%),linear-gradient(120deg,#ffffff04,transparent 48%);
+}
+.exec-panel>*{position:relative;z-index:1}
+.discipline-panel{
+  background:radial-gradient(circle at 50% 60%,#1a6b7955 0%,#10364b 42%,#0a2539 100%);
+}
+.discipline-panel .exec-chart{
+  height:190px;margin:7px 0 4px;padding:7px 5px 0;border:1px solid #2b6577;
+  border-radius:50% 50% 18px 18px / 32% 32% 18px 18px;
+  background:radial-gradient(ellipse at 50% 52%,#1a6272 0%,#123c52 43%,#0a293d 76%);
+  box-shadow:inset 0 0 32px #36d8d51c,0 8px 22px #020d1b55;
+}
+.discipline-panel .recharts-pie-sector path{filter:drop-shadow(0 0 5px #29d4ca55)}
+.discipline-panel .exec-legend{grid-template-columns:1fr 1fr;gap:8px;margin:8px 0 0}
+.discipline-panel .exec-legend span{padding:9px 10px;border:1px solid #2a5b70;border-radius:9px;background:linear-gradient(110deg,#16465b,#102f46);box-shadow:inset 0 1px 0 #ffffff0a}
+.site-map-panel{
+  background:radial-gradient(ellipse at 80% 8%,#087f8c33,transparent 42%),linear-gradient(145deg,#0c3148,#071e32 72%,#0c3448);
+}
+.site-map-panel .exec-map{
+  position:relative;height:290px;padding:7px;border:1px solid #2b7587;border-radius:13px;
+  background:linear-gradient(145deg,#0d5366,#092d44 65%,#071d31);
+  box-shadow:inset 0 0 35px #24c7c51b,0 10px 24px #020e1c66;
+}
+.site-map-panel .exec-map:after{
+  content:"";position:absolute;inset:7px;z-index:450;pointer-events:none;border-radius:8px;
+  background:linear-gradient(135deg,#0a263022,transparent 42%,#18b9b01a);
+  box-shadow:inset 0 0 0 1px #6ee9df22;
+}
+.site-map-panel .exec-map .leaflet-container{
+  height:100%!important;border-radius:8px;background:#09283c;
+}
+.site-map-panel .exec-map .leaflet-tile{
+  filter:brightness(.58) saturate(.72) hue-rotate(145deg) contrast(1.12);
+}
+.site-map-panel .exec-map .leaflet-control-attribution{
+  background:#08283acc;color:#a8cbd0;font-size:7px;
+}
+.site-map-panel .exec-map .leaflet-popup-content-wrapper,.site-map-panel .exec-map .leaflet-popup-tip{
+  background:#0c3045;color:#e7fbfa;border:1px solid #287789;
+}
+.satisfaction-panel{
+  background:radial-gradient(ellipse at 50% 54%,#12647755 0%,#10394e 44%,#09263b 100%);
+}
+.satisfaction-panel .exec-chart{
+  min-height:210px;padding:10px 8px 4px;border:1px solid #2b6477;border-radius:13px;
+  background:radial-gradient(ellipse at 50% 48%,#1a6170 0%,#123a50 46%,#0a293e 100%);
+  box-shadow:inset 0 0 36px #2cd6ce17,0 8px 22px #020e1b55;
+}
+.satisfaction-panel .exec-chart:before{
+  content:"SATISFACTION PERFORMANCE";display:block;margin:0 0 4px 8px;
+  color:#70cfc9;font-size:7px;font-weight:800;letter-spacing:1.3px;
+}
+.exec-panel .exec-chart{
+  border-radius:10px;
+}
+.exec-panel .exec-chart .recharts-wrapper{filter:drop-shadow(0 3px 6px #020c1740)}
+@media(max-width:760px){
+ .filterbar-visual{align-items:flex-start;flex-direction:column;gap:9px}
+ .filterbar-visual>span{margin:0;width:100%}
+ .site-map-panel .exec-map{height:235px}
+ .discipline-panel .exec-chart{height:185px}
+ .satisfaction-panel .exec-chart{min-height:200px}
+}
