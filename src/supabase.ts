@@ -102,22 +102,19 @@ export async function getAttachmentSignedUrl(path: string): Promise<string> {
 
 export async function loadUserProfile() {
   const session=getSession(); if(!session) return null;
-  let profile:any=null;
+  // Read the signed-in user's role through the SECURITY DEFINER RPC first.
+  // This avoids a false Viewer fallback when direct profile SELECT is blocked by RLS.
+  let serverRole: string | null = null;
   try {
-    const rows=await dbRequest<any[]>('user_profiles',`select=user_id,display_name,role&user_id=eq.${encodeURIComponent(session.user.id)}&limit=1`);
-    profile=rows[0]||null;
-  } catch (error) {
-    // Fall through to the security-definer role resolver below.
+    const roleResult = await dbRequest<any>('rpc/pbc_current_role','',{method:'POST',body:{}});
+    serverRole = typeof roleResult === 'string' ? roleResult : (roleResult?.role || roleResult?.pbc_current_role || null);
+  } catch {
+    // Older deployments may not yet have the RPC; fall back to the profile row.
   }
-  if(profile?.role) return profile;
-  try {
-    const resolved=await dbRequest<string>('rpc/pbc_current_role','',{method:'POST',body:{}});
-    if(typeof resolved==='string' && resolved.trim()) {
-      return {user_id:session.user.id,display_name:profile?.display_name||session.user.email||'',role:resolved.trim()};
-    }
-  } catch (error) {
-    // Preserve the least-privilege default if neither lookup is available.
-  }
+  const rows=await dbRequest<any[]>('user_profiles',`select=user_id,display_name,role&user_id=eq.${encodeURIComponent(session.user.id)}&limit=1`);
+  const profile=rows[0]||null;
+  if (profile && serverRole) return {...profile, role: serverRole};
+  if (!profile && serverRole) return {user_id:session.user.id,display_name:session.user.email||'PBC User',role:serverRole};
   return profile;
 }
 export async function loadAuditLogs(limit=250) {
