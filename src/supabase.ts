@@ -178,14 +178,26 @@ export async function loadAttachmentsForAssets(assetIds:string[]):Promise<PbcAtt
   const rows=await dbRequest<PbcAttachment[]>('record_attachments',`select=*&asset_id=in.(${ids.join(',')})&order=uploaded_at.asc`);
   return Promise.all(rows.map(async item=>({...item,signed_url:await getAttachmentSignedUrl(item.storage_path)})));
 }
+export async function updatePassword(accessToken: string, newPassword: string) {
+  if (!supabaseConfigured) throw new Error('Supabase environment variables are missing.');
+  const response = await fetch(`${SUPABASE_URL}/auth/v1/user`, {
+    method: 'PUT',
+    headers: { 'Content-Type': 'application/json', apikey: SUPABASE_KEY!, Authorization: `Bearer ${accessToken}` },
+    body: JSON.stringify({ password: newPassword })
+  });
+  const data = await response.json().catch(() => ({}));
+  if (!response.ok) throw new Error(data.msg || data.message || data.error_description || data.error || 'Could not update password.');
+  return true;
+}
+
 export async function resetPassword(email: string) {
-  const redirectTo =
-    'https://pbc-project-control-management.vercel.app/';
-
-  await authRequest(
-    `recover?redirect_to=${encodeURIComponent(redirectTo)}`,
-    { email }
+  if (!supabaseConfigured) throw new Error('Supabase environment variables are missing.');
+  const redirectTo = `${window.location.origin}/`;
+  const response = await fetch(
+    `${SUPABASE_URL}/auth/v1/recover?redirect_to=${encodeURIComponent(redirectTo)}`,
+    { method: 'POST', headers: { 'Content-Type': 'application/json', apikey: SUPABASE_KEY! }, body: JSON.stringify({ email }) }
   );
-
+  const data = await response.json().catch(() => ({}));
+  if (!response.ok) throw new Error(data.msg || data.message || data.error_description || data.error || 'Could not send password reset email.');
   return true;
 }
