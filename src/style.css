@@ -71,3 +71,19 @@
 @media print{.print-status-row i{print-color-adjust:exact;-webkit-print-color-adjust:exact}.print-summary h3{break-after:avoid}.report-attachment{break-inside:avoid}.print-summary footer{position:running(pbcFooter)}}
 .kpi-card[role=button],.payment-kpi[role=button]{cursor:pointer}.kpi-card[role=button]:focus-visible,.payment-kpi[role=button]:focus-visible{outline:3px solid #168f7966;outline-offset:2px}
 .asset-edit-overlay{z-index:50}
+
+/* PBC executive dashboard refinement */
+.kpi-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.dashboard-chart-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:17px;align-items:stretch}
+.dashboard-chart-grid .panel{background:linear-gradient(180deg,#fff 0%,#fcfefd 100%);border:1px solid #e3ece7;box-shadow:0 7px 22px #123d350b;transition:transform .18s ease,box-shadow .18s ease}
+.dashboard-chart-grid .panel:hover{transform:translateY(-2px);box-shadow:0 12px 28px #123d3515}
+.dashboard-chart-grid .chart{height:245px;margin:13px -5px 0}
+.dashboard-chart-grid .panel-head h3{font-size:13px;letter-spacing:-.1px}
+.dashboard-chart-grid .panel-head p{line-height:1.5}
+.payment-kpi{border:1px solid #e3ece7;border-radius:11px;background:linear-gradient(145deg,#fff,#f6faf8);box-shadow:0 4px 14px #123d3508;transition:transform .18s ease,border-color .18s ease}
+.payment-kpi:hover{transform:translateY(-2px);border-color:#9bcfbb}
+.kpi-card{background:linear-gradient(145deg,#fff 0%,#f9fcfa 100%)}
+.kpi-card:focus-visible,.payment-kpi:focus-visible{outline:3px solid #65b99d;outline-offset:2px}
+@media(max-width:1200px){.dashboard-chart-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.kpi-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:850px){.dashboard-chart-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.kpi-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.dashboard-chart-grid{grid-template-columns:1fr}.dashboard-chart-grid .chart{height:235px}.kpi-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.kpi-card{min-width:0}.kpi-card>strong{font-size:20px;overflow-wrap:anywhere}.payment-kpi-grid{gap:8px}}
