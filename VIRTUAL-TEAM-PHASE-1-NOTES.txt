@@ -1,0 +1,9 @@
+PBC VIRTUAL TEAM - REVISED PHASE 1
+
+Four roles only:
+- Project Manager: sole decision and approval authority; may issue instructions and review updates.
+- MEP Engineer: may submit MEP updates and acknowledge instructions only.
+- Civil Engineer: may submit Civil updates and acknowledge instructions only.
+- Document Controller: may submit document-status updates and acknowledge instructions only.
+
+The Virtual Team page is a front-end preview. Messages and acknowledgements remain in browser memory for the current session. AI agents, shared message persistence, identity-based permission enforcement and database workflows are not connected in this phase. Do not treat the UI labels as production security controls. No Supabase schema, RLS, user roles, project records, Excel import, reports, GIS or existing modules were intentionally changed.
